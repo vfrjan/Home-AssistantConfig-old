@@ -1,0 +1,73 @@
+- alias: "lys stue på"
+  hide_entity: false
+  trigger: 
+     platform: numeric_state
+     entity_id: sun.sun
+     value_template: "{{ state.attributes.elevation }}"
+     below: 15.0
+  action:
+   - service: homeassistant.turn_on
+     entity_id: light.level
+   - service: homeassistant.turn_on
+     entity_id: switch.switch_2
+   - service: homeassistant.turn_on
+     entity_id: switch.switch_3
+   - service: homeassistant.turn_on
+     entity_id: switch.switch_4
+ 
+- alias: "lys stue av weekend"
+  hide_entity: false
+  trigger:
+   - platform: time
+     at: '00:50'
+  condition:
+  - condition: time
+    weekday:
+      - sat
+      - sun
+ 
+
+  action:
+   - service: homeassistant.turn_off
+     entity_id: light.level 
+   - service: homeassistant.turn_off
+     entity_id: switch.switch_2
+   - service: homeassistant.turn_off
+     entity_id: switch.switch_3
+   - service: homeassistant.turn_off
+     entity_id: switch.switch_4
+
+
+- alias: "lys stue av ukedager"
+  hide_entity: false
+  trigger:
+   - platform: time
+     at: '23:30'
+  condition:
+  - condition: time
+    weekday:
+      - sun
+      - mon
+      - tue
+      - wed
+      - thu
+
+  action:
+   - service: homeassistant.turn_off
+     entity_id: light.level
+   - service: homeassistant.turn_off
+     entity_id: switch.switch_2
+   - service: homeassistant.turn_off
+     entity_id: switch.switch_3
+   - service: homeassistant.turn_off
+     entity_id: switch.switch_4
+
+- alias: "stereo loft av"
+  hide_entity: false
+  trigger: 
+   - platform: time
+     at: '00:10'
+
+  action:
+     service: homeassistant.turn_off
+     entity_id: switch.switch

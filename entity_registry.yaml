@@ -1,0 +1,156 @@
+media_player.squeezebox_touch:
+  name:
+  platform: squeezebox
+  unique_id: 00:04:20:22:e1:93
+media_player.sd18:
+  name:
+  platform: squeezebox
+  unique_id: 5c:26:0a:34:6b:87
+media_player.squeezebox_radio:
+  name:
+  platform: squeezebox
+  unique_id: 00:04:20:2b:d4:e0
+media_player.chromecastsd18:
+  name:
+  platform: cast
+  unique_id: 466d2e1e-f871-6c4a-00a1-634ba8551c56
+light.level:
+  name:
+  platform: zwave
+  unique_id: 2-72057594076299265
+switch.switch:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093060096
+sensor.alarm_type:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528065
+sensor.alarm_level:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528081
+sensor.unknown:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273090
+sensor.alarm_type_2:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305281
+sensor.alarm_level_2:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305297
+sensor.everspring_ad147_plugin_dimmer_module_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528097
+sensor.everspring_ad147_plugin_dimmer_module_power_management:
+  name:
+  platform: zwave
+  unique_id: 2-72057594077528241
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093256770
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273218
+sensor.fibaro_system_fgwpef_wall_plug_gen5_exporting:
+  name:
+  platform: zwave
+  unique_id: 3-72057594093273600
+sensor.fibaro_system_fgwpef_wall_plug_gen5_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305313
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_management:
+  name:
+  platform: zwave
+  unique_id: 3-72057594094305457
+switch.switch_2:
+  name:
+  platform: zwave
+  unique_id: 4-72057594109837312
+sensor.alarm_type_3:
+  name:
+  platform: zwave
+  unique_id: 4-72057594111082497
+sensor.alarm_level_3:
+  name:
+  platform: zwave
+  unique_id: 4-72057594111082513
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid:
+  name:
+  platform: zwave
+  unique_id: 4-72057594111082529
+sensor.everspring_an180_plugin_onoff_module_power_management:
+  name:
+  platform: zwave
+  unique_id: 4-72057594111082673
+switch.switch_3:
+  name:
+  platform: zwave
+  unique_id: 5-72057594126614528
+sensor.alarm_type_4:
+  name:
+  platform: zwave
+  unique_id: 5-72057594127859713
+sensor.alarm_level_4:
+  name:
+  platform: zwave
+  unique_id: 5-72057594127859729
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594127859745
+sensor.everspring_an180_plugin_onoff_module_power_management_2:
+  name:
+  platform: zwave
+  unique_id: 5-72057594127859889
+switch.switch_4:
+  name:
+  platform: zwave
+  unique_id: 6-72057594143391744
+sensor.alarm_type_5:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.alarm_level_5:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636945
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid_3:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.everspring_an180_plugin_onoff_module_power_management_3:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144637105
+zwave.aeotec_zw090_zstick_gen5_eu:
+  name:
+  platform: zwave
+  unique_id: node-1
+zwave.everspring_ad147_plugin_dimmer_module:
+  name:
+  platform: zwave
+  unique_id: node-2
+zwave.everspring_an180_plugin_onoff_module:
+  name:
+  platform: zwave
+  unique_id: node-4
+zwave.everspring_an180_plugin_onoff_module_2:
+  name:
+  platform: zwave
+  unique_id: node-5
+zwave.everspring_an180_plugin_onoff_module_3:
+  name:
+  platform: zwave
+  unique_id: node-6
+zwave.fibaro_system_fgwpef_wall_plug_gen5:
+  name:
+  platform: zwave
+  unique_id: node-3

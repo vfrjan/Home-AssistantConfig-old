@@ -1,0 +1,68 @@
+light.level:
+  friendly_name: Lys TV
+switch.switch:
+  friendly_name: Stereo loft
+switch.switch_2:
+  friendly_name: Lys Vindu
+switch.switch_3:
+  friendly_name: Lys Sofa
+switch.switch_4:
+  friendly_name: Lys Spisebord
+device_tracker.janpc:
+  hidden: yes
+sensor.alarm_level:
+  hidden: yes
+sensor.alarm_level_2:
+  hidden: yes
+sensor.alarm_level_3:
+  hidden: yes
+sensor.alarm_level_4:
+  hidden: yes
+sensor.alarm_level_5:
+  hidden: yes
+sensor.alarm_type:
+  hidden: yes
+sensor.alarm_type_2:
+  hidden: yes
+sensor.alarm_type_3:
+  hidden: yes
+sensor.alarm_type_4:
+  hidden: yes
+sensor.alarm_type_5:
+  hidden: yes
+sensor.cpu:
+  hidden: yes
+sensor.everspring_ad147_plugin_dimmer_module_power_management:
+  hidden: yes
+sensor.everspring_ad147_plugin_dimmer_module_sourcenodeid:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_power_management:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_power_management_2:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_power_management_3:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid_2:
+  hidden: yes
+sensor.everspring_an180_plugin_onoff_module_sourcenodeid_3:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_exporting:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_power_management:
+  hidden: yes
+sensor.fibaro_system_fgwpef_wall_plug_gen5_sourcenodeid:
+  hidden: yes
+zwave.aeotec_zw090_zstick_gen5_eu:
+  hidden: yes
+zwave.everspring_ad147_plugin_dimmer_module:
+  hidden: yes
+zwave.everspring_an180_plugin_onoff_module:
+  hidden: yes
+zwave.everspring_an180_plugin_onoff_module_2:
+  hidden: yes
+zwave.fibaro_system_fgwpef_wall_plug_gen5:
+  hidden: yes
