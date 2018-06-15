@@ -69,6 +69,6 @@ sensors:
   entities:
     - sensor.unknown
     - sun.sun
-    - sensor.yr_symbol
+    - sensor.yr_cloudiness
     - sensor.fibaro_system_fgwpef_wall_plug_gen5_power
     - sensor.fibaro_system_fgwpef_wall_plug_gen5_power_2
