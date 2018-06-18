@@ -64,5 +64,7 @@ zwave.everspring_an180_plugin_onoff_module:
   hidden: yes
 zwave.everspring_an180_plugin_onoff_module_2:
   hidden: yes
+zwave.everspring_an180_plugin_onoff_module_3:
+  hidden: yes
 zwave.fibaro_system_fgwpef_wall_plug_gen5:
   hidden: yes

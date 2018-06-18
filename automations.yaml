@@ -1,29 +1,40 @@
 - alias: "lys stue på"
   hide_entity: false
-  trigger: 
-  - platform: time
-    at: '16:00'
+  trigger:
+  - platform: numeric_state
+    entity_id: sun.sun
+    value_template: "{{ state.attributes.elevation }}"
+    below: 15.0
+  - platform: numeric_state
+    entity_id: sun.sun
+    value_template: "{{ state.attributes.elevation }}"
+    below: 30.0
   condition:
     condition: or
     conditions:
-    - condition: template 
-      value_template: "{{ (sun.sun.elevation < 15) }}" 
+    - condition: numeric_state
+      entity_id: sun.sun
+      value_template: "{{ state.attributes.elevation }}"
+      below: 15.0
     - condition: and
       conditions:
-      - condition: template
-        value_template: "{{ (sun.sun.elevation < 20) }}"
-      - condition: template
-        value_template: "{{ ((states.sensor.yr_cloudiness.state | float) > 50.0) }}"
-
+      - condition: numeric_state
+        entity_id: sun.sun
+        value_template: "{{ state.attributes.elevation }}"
+        below: 53.0
+      - condition: numeric_state
+        entity_id: sensor.yr_cloudiness
+        value_template: "{{ float(state.state) }}"
+        above: 50.0
   action:
-   - service: homeassistant.turn_on
-     entity_id: light.level
-   - service: homeassistant.turn_on
-     entity_id: switch.switch_2
-   - service: homeassistant.turn_on
-     entity_id: switch.switch_3
-   - service: homeassistant.turn_on
-     entity_id: switch.switch_4
+  - service: homeassistant.turn_on
+    entity_id: light.level
+  - service: homeassistant.turn_on
+    entity_id: switch.switch_2
+  - service: homeassistant.turn_on
+    entity_id: switch.switch_3
+  - service: homeassistant.turn_on
+    entity_id: switch.switch_4
  
 - alias: "lys stue av weekend"
   hide_entity: false
